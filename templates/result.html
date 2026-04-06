@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1>🏆 Your Score</h1>
+
+    <h2>{{ score }} / {{ total }}</h2>
+
+    {% if score == total %}
+        <p>🔥 Excellent!</p>
+    {% elif score >= total/2 %}
+        <p>👍 Good job!</p>
+    {% else %}
+        <p>😅 Try again!</p>
+    {% endif %}
+
+    <a href="/">Play Again</a>
+</body>
+</html>
